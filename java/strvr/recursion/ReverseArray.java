@@ -6,10 +6,11 @@ public class ReverseArray {
         // Write your code here.
         //int[] output = new int[n];
         swap(0,n-1,nums);
+        swapOne(0,nums);
         return nums;
 
     }
-
+    // 2 pointer approach
     public static void swap(int l, int r, int[] arr){
         if(l>=r){
             return;
@@ -18,5 +19,17 @@ public class ReverseArray {
         arr[l] = arr[r];
         arr[r] = temp;
         swap(l+1,r-1,arr);
+    }
+
+    // Single pointer approach
+    public static void swapOne(int i, int[] arr){
+        int l = arr.length;
+        if(i>=l/2){
+            return;
+        }
+        int temp = arr[i];
+        arr[i] = arr[l-i-1];
+        arr[l-i-1] = temp;
+        swapOne(i+1,arr);
     }
 }
