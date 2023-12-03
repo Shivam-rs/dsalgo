@@ -9,14 +9,14 @@ public class MinMax {
         int[] b = {10, 10, 10, 3, 3, 3};
         int[] c = {1, 2, 3, 1, 1, 4};
 
-        int[] z = getFrequencies(c);
+        int[] z = getFrequencies(a);
 
         System.out.println(Arrays.toString(z));
     }
     public static int[] getFrequencies(int []v) {
         // Write Your Code Here
 
-        Map<Integer,Integer> map = new HashMap<>();
+        TreeMap<Integer,Integer> map = new TreeMap<>();
         int len = v.length;
 
         for(int i=0; i<len; i++){
