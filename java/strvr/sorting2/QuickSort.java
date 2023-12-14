@@ -1,6 +1,6 @@
 package strvr.sorting2;
-//@Link -
-//@Link -
+//@Link - https://www.codingninjas.com/studio/problems/quick-sort_5844?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+//@Link - https://takeuforward.org/data-structure/quick-sort-algorithm/
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
