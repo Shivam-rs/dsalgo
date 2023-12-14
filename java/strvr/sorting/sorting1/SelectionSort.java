@@ -1,4 +1,4 @@
-package strvr.sorting1;
+package strvr.sorting.sorting1;
 
 //@Link - https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 //@link - https://takeuforward.org/sorting/selection-sort-algorithm/

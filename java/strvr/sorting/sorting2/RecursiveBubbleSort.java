@@ -1,4 +1,4 @@
-package strvr.sorting2;
+package strvr.sorting.sorting2;
 
 import java.util.Arrays;
 

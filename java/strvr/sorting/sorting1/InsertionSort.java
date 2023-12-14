@@ -1,4 +1,4 @@
-package strvr.sorting1;
+package strvr.sorting.sorting1;
 //@link - https://www.codingninjas.com/studio/problems/insertion-sort_624381?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 //@Link - https://takeuforward.org/data-structure/insertion-sort-algorithm/
 public class InsertionSort {

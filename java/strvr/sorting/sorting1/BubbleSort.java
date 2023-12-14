@@ -1,4 +1,4 @@
-package strvr.sorting1;
+package strvr.sorting.sorting1;
 //@Link - https://www.codingninjas.com/studio/problems/bubble-sort_624380?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 //@Link - https://takeuforward.org/data-structure/bubble-sort-algorithm/
 public class BubbleSort {

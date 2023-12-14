@@ -1,4 +1,4 @@
-package strvr.sorting2;
+package strvr.sorting.sorting2;
 //@Link - https://www.codingninjas.com/studio/problems/quick-sort_5844?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 //@Link - https://takeuforward.org/data-structure/quick-sort-algorithm/
 import java.util.ArrayList;
