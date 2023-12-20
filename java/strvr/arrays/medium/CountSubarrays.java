@@ -1,7 +1,8 @@
 package strvr.arrays.medium;
 
 import java.util.HashMap;
-
+//@Link: https://takeuforward.org/arrays/count-subarray-sum-equals-k/
+//@Link: https://leetcode.com/problems/subarray-sum-equals-k/
 public class CountSubarrays {
 
     public static void main(String[] args) {
