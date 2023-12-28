@@ -1,5 +1,6 @@
 package strvr.binarysearch.arrays1d;
-//@Link - https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+//@Link for no duplicates - https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+//@Link for with duplicates - https://leetcode.com/problems/search-in-rotated-sorted-array/
 //@Link - https://takeuforward.org/data-structure/search-element-in-a-rotated-sorted-array/
 public class SearchRotatedArray {
 
@@ -21,8 +22,17 @@ public class SearchRotatedArray {
             int mid = (low + high)/2;
             if(nums[mid] == target) return mid;
 
-            //Search for sorted half
+            //If all the pointers become equal then it would be impossible to determine which half is sorted
+            //What we did is shrank the search space until 1 pointer points to different value
+            //That would help us in determining which half to look at for target value.
+            if(nums[low] == nums[mid] && nums[mid] == nums[high]){
+                //Remember it's not possible to point out the index at which target is present if duplicates are present
+                low++;
+                high--;
+                continue;
+            }
 
+            //Search for sorted half
             if(nums[low] <= nums[mid]){ //<= because array can be of small size
                 //this means that left half is sorted
                 //Now we need to confirm is our target is here in sorted part or not
