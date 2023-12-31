@@ -1,5 +1,6 @@
 package strvr.binarysearch.answers;
-
+//@Link - https://leetcode.com/problems/kth-missing-positive-number/description/
+//@Link - https://takeuforward.org/arrays/kth-missing-positive-number/
 public class FindKthPositive {
 
     public static void main(String[] args) {
