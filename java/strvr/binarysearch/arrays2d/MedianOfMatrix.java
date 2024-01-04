@@ -23,7 +23,7 @@ public class MedianOfMatrix {
             min = Math.min(min, matrix[i][0]);
         }
 
-        //Median would always have at least half of the total elements smaller than it.
+        //Median would always have at least half of the total elements smaller than or equal to it.
         //Low will start from not possible median
         //High would start from possible median
         //By the end of BS low would always point to median
