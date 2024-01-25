@@ -1,4 +1,4 @@
-package strvr.slidingwindow;
+package strvr.slidingwindow.hard;
 
 import java.util.HashMap;
 
