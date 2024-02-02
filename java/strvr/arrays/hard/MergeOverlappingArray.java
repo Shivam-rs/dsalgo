@@ -44,7 +44,7 @@ public class MergeOverlappingArray {
             //if end of interval is greater than start of next interval than they are overlapping
             //Update end point in ans list of interval end point is greater
             if(ans.get(ans.size() - 1)[1] >= intervals[i][0]){
-                ans.get(ans.size() - 1)[1] = Integer.max( ans.get(ans.size() - 1)[1] , intervals[i][1]);
+                ans.get(ans.size() - 1)[1] = Math.max( ans.get(ans.size() - 1)[1] , intervals[i][1]);
             }else{
                 //If there is no match then add a new interval into the list
                 ans.add( new int[] {intervals[i][0], intervals[i][1]} );
