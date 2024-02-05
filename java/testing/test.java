@@ -1,5 +1,6 @@
 package testing;
 
+import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,11 +11,46 @@ public class test {
         a[0] = 1;
     }
     public static void main(String[] args) {
+        int[] A = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
+        int n = A.length;
+        int[] pfMax = new int[n];
+        int max = A[0];
+        pfMax[0] = A[0];
+        for(int i = 1; i<n; i++){
+            // if(A[i] > max){
+            //     pfMax[i] = A[i];
+            //     max = A[i];
+            // }else{
+            //   pfMax[i] = pfMax[i-1];
+            // }
+            pfMax[i] = Math.max(pfMax[i-1], A[i]);
+        }
 
+        int[] sfMax = new int[n];
+        System.out.println(sfMax[0]);
+        max = A[n-1];
+        sfMax[n-1] = A[n-1];
+        for(int i = n-2; i>=0; i--){
+            // if(A[i] > max){
+            //     sfMax[i] = A[i];
+            //     max = A[i];
+            // }else{
+            //   pfMax[i] = pfMax[i+1] ;
+            // }
+            sfMax[i] = Math.max(pfMax[i+1], A[i]);
+        }
+        System.out.println(Arrays.toString(pfMax));
+        System.out.println(Arrays.toString(sfMax));
+        int aaaaaa;
+        aaaaaa =1;
+        System.out.println(aaaaaa);
         /*System.out.println(sumFactor(10));*/
-
-        int a = 4;
+        char[] ch = new char[5];
+        ch[0] = 'a';
+        System.out.println(new String(ch));
+        int a = 10;
         int b = 5;
+        System.out.println(a|1);
         double c = (double)(1)/2;
         System.out.println("c: " +c);
         int d = (int)Math.ceil(c);
@@ -24,6 +60,13 @@ public class test {
         int[] sh = new int[]{3};
         fun(sh);
         System.out.println("LOL " + sh[0]);
+        String s = "11";
+        s += 1;
+        System.out.println(s + 1);
+        char[] aa = new char[5];
+        aa = s.toCharArray();
+
+        System.out.println(Arrays.toString(aa));
         /*int[][] ans = new int[2][2];
         ans[0] = new int[]{1,2};
         //ans[0][1] = 2;
