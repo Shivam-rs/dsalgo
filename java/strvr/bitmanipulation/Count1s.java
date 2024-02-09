@@ -1,7 +1,7 @@
 package strvr.bitmanipulation;
 
 //@Link - https://leetcode.com/problems/number-of-1-bits/solutions/4699803/java-beats-100-0ms-run-time-best-solution/
-
+//Key learning is >>> is used when signed bit is not to be preserved
 public class Count1s {
     public static void main(String[] args) {
         int n = -3;
