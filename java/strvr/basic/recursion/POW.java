@@ -1,5 +1,6 @@
 package strvr.basic.recursion;
 //Scaler recursion question
+
 public class POW {
 
     public static void main(String[] args) {
