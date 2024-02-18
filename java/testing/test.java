@@ -5,27 +5,35 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 public class test {
     static void fun(int[] a){
         a[0] = 1;
     }
     public static void main(String[] args) {
-        int[] A = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
-        int n = A.length;
-        int[] pfMax = new int[n];
-        int max = A[0];
-        pfMax[0] = A[0];
-        for(int i = 1; i<n; i++){
-            // if(A[i] > max){
-            //     pfMax[i] = A[i];
-            //     max = A[i];
-            // }else{
-            //   pfMax[i] = pfMax[i-1];
-            // }
-            pfMax[i] = Math.max(pfMax[i-1], A[i]);
-        }
+//        int[] A = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
+//        int n = A.length;
+//        int[] pfMax = new int[n];
+//        int max = A[0];
+//        pfMax[0] = A[0];
+//        for(int i = 1; i<n; i++){
+//            // if(A[i] > max){
+//            //     pfMax[i] = A[i];
+//            //     max = A[i];
+//            // }else{
+//            //   pfMax[i] = pfMax[i-1];
+//            // }
+//            pfMax[i] = Math.max(pfMax[i-1], A[i]);
+//        }
+        System.out.println((long)Math.pow(2,32));
+        System.out.println((1L <<32));
 
+        ArrayList<ArrayList<Integer>> temp = new ArrayList<>();
+        temp.add( new ArrayList<>(List.of(0,1)));
+
+
+/*
         int[] sfMax = new int[n];
         System.out.println(sfMax[0]);
         max = A[n-1];
@@ -44,7 +52,7 @@ public class test {
         int aaaaaa;
         aaaaaa =1;
         System.out.println(aaaaaa);
-        /*System.out.println(sumFactor(10));*/
+        /*System.out.println(sumFactor(10));* /
         char[] ch = new char[5];
         ch[0] = 'a';
         System.out.println(new String(ch));
@@ -67,7 +75,8 @@ public class test {
         aa = s.toCharArray();
 
         System.out.println(Arrays.toString(aa));
-        /*int[][] ans = new int[2][2];
+*/
+/*int[][] ans = new int[2][2];
         ans[0] = new int[]{1,2};
         //ans[0][1] = 2;
 
@@ -113,19 +122,19 @@ public class test {
             }*/
     }
 
-    public static int sumFactor(int A) {
-        int sum = 1;
-        int i = 0;
-        for(i = 2; i*i<A; i++){
-            if(A%i == 0) {
-                sum += (i + A/i);
-            }
-        }
-
-        if (i*i == A) sum += i;
-        if(A == 1) sum = 1;
-        return sum;
-    }
+//    public static int sumFactor(int A) {
+//        int sum = 1;
+//        int i = 0;
+//        for(i = 2; i*i<A; i++){
+//            if(A%i == 0) {
+//                sum += (i + A/i);
+//            }
+//        }
+//        Integer.bitCount(10);
+//        if (i*i == A) sum += i;
+//        if(A == 1) sum = 1;
+//        return sum;
+//    }
 
     /*public static String solve(String A) {
         int len = A.length();
