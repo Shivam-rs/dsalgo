@@ -21,10 +21,10 @@ public class SumDivisibleByM {
             freq.put(A[i], freq.getOrDefault(A[i],0) +1);
         }
 
-        long count = 0;
+        long count;
 
         long temp = freq.getOrDefault(0,0);
-        long temp2 = 0;
+        long temp2;
         count = ((temp *(temp -1))/2)%m;
 
         if(B%2 == 0){
