@@ -1,5 +1,6 @@
-package testing;
+package testing.testing2nd;
 
+import java.sql.Array;
 import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -29,9 +30,16 @@ public class test {
         System.out.println((long)Math.pow(2,32));
         System.out.println((1L <<32));
 
-        ArrayList<ArrayList<Integer>> temp = new ArrayList<>();
-        temp.add( new ArrayList<>(List.of(0,1)));
+        ArrayList<int[]> temp = new ArrayList<>();
+        temp.add( new int[]{0,1});
+        int[] arr = new int[]{2, 3, 4, 5};
+        for(int a : arr){
+            a = a%2;
+        }
+        System.out.println(Arrays.toString(arr));
+        temp.add(arr.clone());
 
+        System.out.println(temp.contains(arr));
 
 /*
         int[] sfMax = new int[n];
