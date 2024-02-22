@@ -1,4 +1,4 @@
-package testing.testing2nd;
+package testing;
 
 import java.sql.Array;
 import java.sql.SQLOutput;
@@ -27,6 +27,9 @@ public class test {
 //            // }
 //            pfMax[i] = Math.max(pfMax[i-1], A[i]);
 //        }
+        String s = "";
+        s += "sss";
+        System.out.println(s);
         System.out.println((long)Math.pow(2,32));
         System.out.println((1L <<32));
 
